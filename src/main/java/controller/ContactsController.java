@@ -34,20 +34,6 @@ public class ContactsController extends HttpServlet {
 				
 				request.getRequestDispatcher("/list.jsp").forward(request, response);
 			}
-			else if(cmd.equals("/Delete.contacts")){
-				String seq = request.getParameter("seq");
-				
-				dao.delete(seq);
-				response.sendRedirect("/List.contacts");
-			}
-			else if(cmd.equals("/Update.contacts")){
-				String writer = request.getParameter("writer");
-				String message = request.getParameter("message");
-				String seq = request.getParameter("seq");
-				
-				dao.update(writer,message,seq);
-				response.sendRedirect("/List.contacts");
-			}
 		}catch(Exception e) {
 			e.printStackTrace();
 			response.sendRedirect("/error.html");
