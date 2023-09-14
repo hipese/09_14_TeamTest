@@ -25,7 +25,7 @@ public class ContactsController extends HttpServlet {
 				String writer = request.getParameter("writer");
 				String message = request.getParameter("message");
 				dao.insert(new ContactsDTO(null,writer,message));
-				response.sendRedirect("/index.html");
+				response.sendRedirect("/index.jsp");
 			}
 			else if(cmd.equals("/Output.contacts")){
 				java.util.List<ContactsDTO> list = dao.selectAll();
