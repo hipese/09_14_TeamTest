@@ -24,15 +24,15 @@ public class ContactsController extends HttpServlet {
 
 				String writer = request.getParameter("writer");
 				String message = request.getParameter("message");
-				dao.insert(new ContactsDTO(0,writer,message));
+				dao.insert(new ContactsDTO(null,writer,message));
 				response.sendRedirect("/index.html");
 			}
-			else if(cmd.equals("/List.contacts")){
+			else if(cmd.equals("/Output.contacts")){
 				java.util.List<ContactsDTO> list = dao.selectAll();
 				request.setAttribute("list", list);
 			
 				
-				request.getRequestDispatcher("/list.jsp").forward(request, response);
+				request.getRequestDispatcher("/outputForm.jsp").forward(request, response);
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
