@@ -21,7 +21,7 @@ td {
 		<th colspan="2">Index</th>
 		<tr>
 			<td><a href="/input.jsp">toInput</a></td>
-			<td><a href="/output.contacts">toOutput</a></td>
+			<td><a href="/Output.contacts">toOutput</a></td>
 		</tr>
 	</table>
 </body>
