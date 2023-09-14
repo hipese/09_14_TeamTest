@@ -17,14 +17,12 @@ td {
 </style>
 </head>
 <body>
-	<form action="/insert.contact" method="get">
-		<table border="1px">
-			<th colspan="2">Index</th>
-			<tr>
-				<td><a href="/Input.jsp">toInput</a></td>
-				<td><a href="/Output.contact">toOutput</a></td>
-			</tr>
-		</table>
-	</form>
+	<table border="1px">
+		<th colspan="2">Index</th>
+		<tr>
+			<td><a href="/Input.jsp">toInput</a></td>
+			<td><a href="/Output.contact">toOutput</a></td>
+		</tr>
+	</table>
 </body>
 </html>
