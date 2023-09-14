@@ -20,8 +20,8 @@ td {
 	<table border="1px">
 		<th colspan="2">Index</th>
 		<tr>
-			<td><a href="/Input.jsp">toInput</a></td>
-			<td><a href="/Output.contact">toOutput</a></td>
+			<td><a href="/input.jsp">toInput</a></td>
+			<td><a href="/output.contact">toOutput</a></td>
 		</tr>
 	</table>
 </body>
