@@ -20,7 +20,7 @@ public class ContactsController extends HttpServlet {
 
 		ContactsDAO dao = ContactsDAO.getInstance();
 		try {
-			if(cmd.equals("/Save.contacts")){
+			if(cmd.equals("/save.contacts")){
 
 				String writer = request.getParameter("writer");
 				String message = request.getParameter("message");
